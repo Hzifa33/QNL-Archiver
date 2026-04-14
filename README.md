@@ -51,7 +51,7 @@ Built with user experience in mind, it features live progress tracking, asynchro
    * **Book ID:** Enter the QNL Book ID (e.g., `QNL:00022881`). You can find this ID in the URL of the book on the QNL digital archive website.
 
   **How to find the Book ID:** You can find the Book ID among the book's information on the website, specifically located in the "**رقم التصنيف**" box, as illustrated below:
-     <img src="https://img.shields.io/badge/python-3.6%2B-blue.svg" width="719" height="110" alt="Where to find the Book ID">
+     <img src="https://i.postimg.cc/85DxNZ46/Screenshot-2026-04-14-14-19-35-13-40deb401b9ffe8e1df2f1cc5ba480b12.jpg" width="719" height="110" alt="Where to find the Book ID">
      
    * **Output filename:** Enter your desired name for the final PDF file (without the `.pdf` extension).
 
