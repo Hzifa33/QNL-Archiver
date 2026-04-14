@@ -5,35 +5,30 @@
 
 **QNL Archiver** is a powerful, multi-threaded Command Line Interface (CLI) tool designed to download digitized books and manuscripts from the Qatar National Library (QNL) and compile them seamlessly into high-quality PDF files. 
 
-Built with user experience in mind, it features live progress tracking, asynchronous background tasks, and graceful error handling.
-
 ## ✨ Features
-
-* **Smart Page Detection:** Utilizes binary search to quickly and accurately determine the total number of pages in a book without downloading them.
-* **Live Progress UI:** Beautiful, color-coded terminal output with live progress bars, spinners, and detailed status updates.
-* **Resilient Downloading:** Includes fallback server logic and automatic retries for missing or corrupted images.
-* **Graceful Interruption:** Press `Ctrl+C` at any time to pause the process. You can choose to save the pages downloaded so far into a partial PDF or discard them cleanly.
-* **Auto-Assembly:** Automatically merges downloaded JPEG2000/JPG files into a single, optimized PDF using `img2pdf`.
-* **Resource Cleanup:** Automatically cleans up temporary directories and downloaded image fragments after PDF generation.
+* **Smart Page Detection:** Accurate total page count using binary search.
+* **Live Progress UI:** Color-coded terminal output with live progress bars.
+* **Auto-Assembly:** Automatically merges downloaded files into a single PDF.
+* **Resource Cleanup:** Cleans up temporary files after generation.
 
 ## ⚙️ Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-* **Python 3.6** or higher installed on your machine.
+* **Python 3.6+**
+* **System Package:** `qpdf` (Required for PDF processing)
 
 ## 🚀 Installation
 
 1. **Clone the repository:**
-
    ```bash
    git clone https://github.com/Hzifa33/QNL-Archiver.git
    cd QNL-Archiver
    ```
 
-2. **Install the required dependencies:**
+2. **Install System Dependencies (Termux):**
+   ```bash
+   pkg update && pkg install qpdf -y
+   ```
 
-   It is highly recommended to use a virtual environment. Install the required packages using pip:
-
+3. **Install Python Requirements:**
    ```bash
    pip install -r requirements.txt
    ```
@@ -41,36 +36,19 @@ Before you begin, ensure you have met the following requirements:
 ## 🛠️ Usage
 
 1. **Run the script:**
-
    ```bash
    python qnl_downloader.py
    ```
 
 2. **Follow the interactive prompts:**
-
-   * **Book ID:** Enter the QNL Book ID (e.g., `QNL:00022881`). You can find this ID in the URL of the book on the QNL digital archive website.
-   * **Output filename:** Enter your desired name for the final PDF file (without the `.pdf` extension).
-
-### Example Workflow
-
-```text
-  >  Book ID  e.g. QNL:00022881
-  > QNL:00022881
-
-  >  Output filename  (no extension)
-  > History_of_Qatar
-```
-
-*The tool will calculate the estimated size, ask for confirmation, and begin the download process while displaying a live progress bar.*
+   * Enter the **Book ID** (e.g., `QNL:00022881`).
+   * Enter the **Output filename**.
 
 ## ⚠️ Disclaimer
-
-This tool is intended for personal, educational, and research purposes only. Please respect the Qatar National Library's Terms of Service and copyright policies when downloading and using their digital materials. Do not use this tool to overwhelm their servers.
+This tool is for personal and educational use only. Please respect the QNL copyright policies.
 
 ## 👨‍💻 Author
-
 Developed with ♥ by **Hzifa33**
 
 ## 📄 License
-
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the LICENSE file for details.
