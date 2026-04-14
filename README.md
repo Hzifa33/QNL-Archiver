@@ -43,7 +43,7 @@ Before you begin, ensure you have met the following requirements:
 1. **Run the script:**
 
    ```bash
-   python main.py
+   python qnl_downloader.py
    ```
 
 2. **Follow the interactive prompts:**
@@ -73,4 +73,4 @@ Developed with ♥ by **Hzifa33**
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the LICENSE file for details.
